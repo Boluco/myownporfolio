@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Home | Myportfolio</title>
+  <style>
+    .mydiv1{
+      height: 100vh;
+      background-image: url("Image/tech6.jpg");
+      background-repeat: no-repeat;
+      background-size:cover;
+      animation-name:animation1;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes animation1{
+      0%{background-image: url("Image/tech6.jpg");}
+      50%{background-image: url("Image/tech7.jpg");}
+      100%{background-image: url("Image/tech4.jpg");}
+    }
+
+    #myname{
+      color: white;
+      margin-top: 50px;
+      font-size: 60px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    #mywork{
+      color: white;
+      margin-top: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #insta, #twit, #fb2{
+      margin-right: 7px;
+    }
+
+    #aboutme{
+      font-size: 40px;
+    }
+
+    #mydiv2{
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+    }
+
+    #mydiv3{
+      padding-top: 50px;
+     
+    }
+
+    #pfp{
+      margin-top: 150px ;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #cont1{
+      width: 450px;
+      height: 200px;
+      border: 1px solid black;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    #line1{
+      margin-left: 95px;
+      margin-right: 95px;
+    }
+
+    #cont2{
+      width: 450px;
+      height: 200px;
+      border: 1px solid black;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-left: 100px;
+    }
+
+    #exp{
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 20px;
+    }
+
+    .message{
+      width: 980px;
+      height: 600px;
+      border: 1px solid black;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #dropmsg{
+      border: 1px solid black;
+      height: 500px;
+      margin-top: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    #msgme{
+      padding-left: 95px;
+      padding-right: 95px;
+      margin-top: 80px;
+      margin-bottom: 100px;
+    }
+
+    #porti{
+      background-image: url("image/Capture.PNG");
+      width: 1549px;
+      height: 200px;
+    }
+
+    #resin{
+      width: 500px;
+    }
+
+    #web1{
+      margin-left: 110px; 
+      margin-right: 110px;
+    }
+
+    @media only screen and (max-width:600px) {
+      #mydiv3{
+      margin-left: 50px;
+      }
+    }
+
+    @media only screen and (max-width:600px) {
+      #line1{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+
+    @media screen and (max-width:600px) {
+      #cont1{
+        margin-left: -10px;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 430px;
+      }
+    }
+
+    @media screen and (max-width:600px) {
+      #cont2{
+        margin-left: -10px;
+        margin-right: 0px;
+        width: 430px;
+      }
+    }
+
+    @media only screen and (max-width:600px) {
+      #msgme{
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+
+    @media only screen and (max-width:600px) {
+      .message{
+        width: 450px;
+      }
+    }
+
+    @media only screen and (max-width:600px) {
+      #resin{
+        width:350px ;
+      }
+    }
+
+    @media only screen and (max-width:600px) {
+      #web1{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+        </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row" id="ooff">
+      <div class="col-md-12 mydiv1 text-center">
+        <img src="image/idan.JPG" width="200px" height="200px" class ="rounded-circle" id="pfp">
+         <h1 id="myname">Adegoke Boluwatife</h1>
+         <p id="mywork">Frontend Web Developer</p>
+       <img src="image/facebook (1).png" height="25px" width="25px" id="insta">
+       <img src="Image/twitter (1).png"  height="25px" width="25px" id="twit">
+       <img src="Image/instagram (3).png"  height="25px" width="25px" id="fb2">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8" id="mydiv2">
+        <h1 id="aboutme">About Me</h1>
+        <p>I'm Adegoke Boluwatife from Nigeria, Osun State.</p>
+        <p>I love programming and I always try my best to innovative!</p>
+        <p>I'm a Frontend</p>
+        <p>I use HTML, CSS, Javascript, Bootstrap and React to create stunning websites</p>
+        <p>I love being a Frontend dveloper</p>
+      </div>
+      <div class="col-md-4" id="mydiv3">
+        <img src="image/my pic.JPG" width="350px" height="400px">
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px; margin-bottom: 50px;">
+      <div class="col-md-12" id="porti">
+       <center><h2 style="color: white; margin: 70px auto; font-size: 40px;">Portfolio</h2></center> 
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 style="font-size: 40px;">My Top Projets</h1>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px; margin-bottom: 50px;" id="web1">
+      <div class="col-md-4" style="background-color: blue; color: white; border: 5px solid white; padding-top: 90px;" >
+       <h3>Triton</h3>
+       <br>
+       <p style="font-weight: bold;">Triton is a Spigot plugin for Minecraft that <br> enables a Minecraft server to send <br> messages in the player's language. <br>
+        This was my first premium plugin on Spigot <br> and I've put a lot of work and effort into it!</p>
+        <a style="text-decoration: none; color: white;" href="#">Visit Website</a>
+      </div>
+      <div class="col-md-4" style="background-color: orangered; color: white; border: 5px solid white;padding-top: 90px;" id="fly"> 
+        <h3>Craftathon</h3>
+        <br>
+        <p style="font-weight: bold;">Craftathon is a weekend-long charity event <br> that managed to raise $7,599 for Child's <br> Play Charity in two</p>
+        <a style="text-decoration: none; color: white;" href="#">Visit Website</a>
+      </div>
+      <div class="col-md-4" style="background-color: purple; color: white; border: 5px solid white;  padding-top: 90px;">
+        <h3>Livraria e Papelaria Espaço</h3>
+        <br>
+        <p style="font-weight: bold;">Livraria e Papelaria Espaço is a local <br> bookstore in my area. I've help built their <br> internet presence by coding a webstore as <br> well as providing hosting and email <br> services. <br>
+          Furthermore, I've coded some tools that <br> helped speed labour-intensive tasks in- <br> store.</p>
+        <a style="text-decoration: none; color: white;" href="#">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="row" id="exp">
+      <div class="col-md-12 text-center" style="margin-bottom: 40px;">
+        <h1 id="aboutme">Work Experience</h1>
+      </div>
+    </div>
+
+    <div class="row" id="line1">
+      <div class="col-md-6 content">
+        <div id="cont1">
+         <p>Web Developer</p>
+         <h5>CodeSchool Africa</h5>
+         <p>I am not responsible for buliding any project ong, no phor we go still bulid something.</p>
+         <p>Abi you dey craze give me job werey.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+
+      </div>
+      
+      <div class="col-md-6"></div>
+      <div class="col-md-6 content2">
+       <div id="cont2">
+        <p>Web Developer</p>
+         <h5>CodeSchool Africa</h5>
+         <p>I am not responsible for buliding any project ong, no phor we go still bulid something.</p>
+         <p>Abi you dey craze give me job werey.</p>
+       </div>
+      </div>
+
+      <div class="col-md-6 content">
+        <div id="cont1">
+          <p>Web Developer</p>
+         <h5>CodeSchool Africa</h5>
+         <p>I am not responsible for buliding any project ong, no phor we go still bulid something.</p>
+         <p>Abi you dey craze give me job werey.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+    </div>
+
+    <div class="col-md-6"></div>
+      <div class="col-md-6 content2">
+       <div id="cont2">
+        <p>Web Developer</p>
+         <h5>CodeSchool Africa</h5>
+         <p>I am not responsible for buliding any project ong, no phor we go still bulid something.</p>
+         <p>Abi you dey craze give me job werey.</p>
+       </div>
+      </div>
+
+      <div class="row" id="msgme">
+        <div class="col-md-6">
+          <h1 id="">Reach Out To Us</h1>
+          <p>If you have any questions, reach out to us via the <br>
+          following contact information. <br>
+          <br>
+          Address: Codehub:Army Barracks Road, off Mokola- <br>
+          UI Road Behind Vetenairy Hospital, Mokola Ibadan <br>
+          Call/Whatsapp: +2348071220826 <br>
+          Email: adegokebolu1247@gmail.com
+        </p>
+        </div>
+        <div class="col-md-6 message">
+          <div id="dropmsg">
+            <form method="post">
+             <center><h3 style="margin-top: 30px;">DROP A MESSAGE</h3></center> 
+              <hr style="border: 1px solid black;">
+              <Label style="font-weight: bold;">Enter your First Name*</Label><br>
+              <input type="text" placeholder="FIRSTNAME" id="resin"><br>
+              <Label style="font-weight: bold;">Enter your last Name*</Label><br>
+              <input type="text" placeholder="LASTNAME" id="resin"><br>
+              <Label style="font-weight: bold;">Enter your Email*</Label> <br>
+              <input type="email" placeholder="EMAIL" id="resin"><br>
+              <label style="font-weight: bold;">Enter Your Message*</label><br>
+              <input type="text" placeholder="Enter your Message" id="resin" style="height: 100px;">
+              <center><button type="button" style="width: 150px; height: 50px; background-color: black; color: white; border-radius: 10px; margin-top: 10px;">Send Message</button></center> 
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 text-center" style="background-color: black; color: white;">
+      <p>Copyright &copy Bolu Agba Tech</p>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
